@@ -4,7 +4,7 @@ const schema = require("./schema/schema");
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  "mongodb+srv://anshuman:test123@graphql-ninja-ablvr.mongodb.net/test?retryWrites=true&w=majority",
+  "mongodb+srv://anshuman:test123@cluster0-ibt7a.mongodb.net/<dbname>?retryWrites=true&w=majority",
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 mongoose.connection.once("open", () => {
